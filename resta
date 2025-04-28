@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int principal()
+{
+int n1,n2,resta;
+cout("Introduce el primer número");
+cin("%d",&n1);
+cout("Introduzca el segundo número");
+cin("%d",&n2);
+resta=n1-n2;
+cout("El resultado de la resta es:%d/n",resta);
+return 0;
+}
