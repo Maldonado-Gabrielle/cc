@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int principal()
+{
+int n1,n2,multiplicacion;
+cout("Introduce el primer número");
+cin("%d",&n1);
+cout("Introduzca el segundo número");
+cin("%d",&n2);
+multiplicacion=n1*n2;
+cout("El resultado de la multiplicacion es:%d/n",multiplicacion);
+return 0;
+}
