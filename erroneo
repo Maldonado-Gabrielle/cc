@@ -1,16 +1,23 @@
 import tkinter as tk
+
 def saludar():
- nombre = entrada.get()
- etiqueta_resultado.config(text=f"Hola {nombre}")
-ventana = tk.Tk()
-ventana.title("Saludo")
-ventana.geometry("300x150")
-etiqueta = tk.Label(ventana, text="Ingresa tu nombre:")
-etiqueta.pack()
-entrada = tk.Entry(ventana)
-entrada.pack()
-boton = tk.Button(ventana, text="Saludar", command=saludar)
-boton.pack()
-etiqueta_resultado = tk.Label(ventana, text="")
-etiqueta_resultado.pack()
-ventana.mainloop()
+    nombre_ingresado = campo_nombre.get()
+    etiqueta_saludo.config(text=f"Hola {nombre_ingresado}")
+
+ventana_principal = tk.Tk()
+ventana_principal.title("Saludo")
+ventana_principal.geometry("300x150")
+
+etiqueta_instruccion = tk.Label(ventana_principal, text="Ingresa tu nombre:")
+etiqueta_instruccion.pack()
+
+campo_nombre = tk.Entry(ventana_principal)
+campo_nombre.pack()
+
+boton_saludo = tk.Button(ventana_principal, text="Saludar", command=saludar)
+boton_saludo.pack()
+
+etiqueta_saludo = tk.Label(ventana_principal, text="")
+etiqueta_saludo.pack()
+
+ventana_principal.mainloop()
